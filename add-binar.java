@@ -3,6 +3,16 @@ class Solution {
     public String addBinary(String a, String b) {
         String result ="";
         String  carry="0";
+        if(a.length() > b.length()){
+            for(int i = b.length();i<a.length();i++){
+                b="0"+b;
+            }
+        }
+        else if(a.length()<b.length()){
+            for(int i=a.length();i<b.length();i++){
+                a = "0"+a;
+            }
+        }
         if(a.length()==b.length()){
             for(int i=a.length()-1;i>=0;i--){
                 if(a.charAt(i)==b.charAt(i) && b.charAt(i)=='0' && carry.equals("0")){
