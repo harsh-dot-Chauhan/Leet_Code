@@ -1,4 +1,5 @@
 //https://leetcode.com/problems/valid-anagram
+//Daily Challenge
 class Solution {
     public boolean isAnagram(String s, String t) {
         char[] sr = s.toCharArray();
